@@ -1,0 +1,47 @@
+1. 0/1 Knapsack (Dynamic Programming)
+- Time Complexity: O(nW)
+- where n is the number of items and W is the capacity of knapsack
+- Space Complexity: O(nW)
+- Uses a 2D table to store subproblem results
+
+2. Bellman-Ford 
+- Time Complexity: O(VE)
+- where V is number of vertices and E is number of edges
+- Space Complexity: O(V)
+- Performs V-1 relaxations on all edges
+- Can detect negative cycles in one additional pass
+
+3. Graph Coloring (Backtracking)
+- Time Complexity: O(m^V)
+- where m is number of colors and V is number of vertices
+- Space Complexity: O(V)
+- Tries all possible color combinations
+- Is NP-complete, exponential in worst case
+
+4. Huffman Coding
+- Time Complexity: O(n log n)
+- where n is number of unique characters
+- Space Complexity: O(n)
+- Building min heap takes O(n)
+- Extracting min and inserting new node n-1 times takes O(n log n)
+
+5. Karatsuba Multiplication
+- Time Complexity: O(n^log₂3) ≈ O(n^1.585)
+- where n is number of digits
+- Space Complexity: O(n)
+- Improves upon traditional O(n²) multiplication
+- Divides numbers into smaller parts recursively
+
+6. Job Assignment (Branch and Bound)
+- Time Complexity: O(n!) in worst case
+- where n is number of jobs/workers
+- Space Complexity: O(n²)
+- Uses lower bound calculations to prune search space
+- Actual runtime often better than worst case due to pruning
+
+7. Parallel Quicksort
+- Time Complexity: O(n log n / p + log p)
+- where n is number of elements and p is number of processors
+- Space Complexity: O(n)
+- Communication overhead: O(log p)
+- Parallel overhead includes partition distribution and result collection
